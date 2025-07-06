@@ -8,6 +8,10 @@ def test_generate_int_matrix_defaultshape_and_type():
     assert matrix.shape == (3, 3)
     assert issubclass(matrix.dtype.type, np.integer)
 
+def test_generate_int_matrix_raises_on_invalid_range():
+    with pytest.raises(ValueError):
+        generate_int_matrix(low=10, high=5)
+
 def test_generate_int_matrix_range():
     low, high = -5, 5
     matrix = generate_int_matrix(low=low, high=high)
