@@ -30,11 +30,6 @@ def test_calculate_determinant_type():
     det = calculate_determinant(matrix)
     assert isinstance(det, float)
 
-def test_rounded_determinant_is_integer():
-    matrix = generate_int_matrix()
-    det = int(round(calculate_determinant(matrix)))
-    assert isinstance(det, int)
-
 def test_calculate_determinant_non_square_raises():
     matrix = np.array([[1, 2, 3],
                        [4, 5, 6]])
