@@ -1,14 +1,50 @@
-# sciezka-kariery-computer-vision
+# Ścieżka kariery – Computer Vision
 
-Repozytorium dla ścieżki kariery Programista AI ze specjalizacją w Computer Vision autorstwa porozmawiaimy.pl
+Repozytorium dla ścieżki kariery **Programista AI – specjalizacja: Computer Vision**, przygotowane przez [porozmawiaimy.pl](https://porozmawiaimy.pl).
 
-Niniejsze repozytorium będzie zawierać wszystkie pliki i aplikacje utworzone w ramach tej ścieżki kariery.
+Zawiera wszystkie pliki i aplikacje utworzone w ramach tej ścieżki kariery.
+
+---
 
 ## Projekty
 
 ### hello_numpy
 
-Pierwszy projekt z NumPy. Użytkownik generuje losową macierz (domyślnie o wymiarach 3×3) liczb całkowitych (domyślnie z zakresu [-10, 10]), a następnie oblicza jej wyznacznik za pomocą funkcji NumPy.
+Pierwszy projekt z użyciem **NumPy**:
 
-Projekt zawiera unit testy oraz obsługę wyjątków.
-Pliki: `hello_numpy.py`, `test_hello_numpy.py`, `README.md`.
+- Generuje losową macierz (domyślnie 3×3) liczb całkowitych z zakresu `[-10, 10]`
+- Oblicza wyznacznik macierzy za pomocą `numpy.linalg.det`
+- Zawiera testy jednostkowe i obsługę wyjątków
+
+**Pliki:**
+
+- `hello_numpy.py`
+- `test_hello_numpy.py`
+- `README.md`
+
+---
+
+## Jak uruchomić (How to Run)
+
+1. Zainstaluj zależności (jeśli jeszcze nie masz NumPy):
+
+   ```bash
+   pip install numpy
+   ```
+
+2. Uruchom plik:
+
+   ```bash
+   python hello_numpy.py
+   ```
+
+3. (Opcjonalnie) Uruchom testy:
+   ```bash
+   python test_hello_numpy.py
+   ```
+
+---
+
+## Dokumentacja
+
+- [Oficjalna dokumentacja NumPy](https://numpy.org/doc/)
